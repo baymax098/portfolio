@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rithika NK — ECE Student & Tech Enthusiast</title>
+  <meta name="description" content="Rithika NK — ECE student passionate about embedded systems, IoT, and software development. Explore my projects, skills, and journey in tech." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- Particle Canvas -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- ==================== NAVIGATION ==================== -->
+<nav>
+  <div class="container nav-inner">
+    <a class="nav-logo" href="#hero">ℜ𝔎</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact" class="nav-cta">Reach Out</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- Left: Text -->
+      <div class="hero-content">
+        <div class="hero-eyebrow">Folio · 2026</div>
+
+        <h1 class="hero-title">Curious mind,<br><em>building</em> things</h1>
+        <div class="hero-name">Rithika NK</div>
+
+        <p class="hero-subtitle-role">
+          <span class="hero-role-prefix">1st Year ECE Student · </span>
+          <span id="typewriter" class="typewriter-text"></span><span class="typewriter-cursor">|</span>
+        </p>
+        <div class="hero-divider"></div>
+
+        <p class="hero-desc">
+          "From microcontrollers to machine learning — I'm an ECE student who loves
+          getting her hands dirty with hardware and software alike, one project at a time."
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary magnetic-btn">
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            <span>View My Work</span>
+          </a>
+          <a href="#contact" class="btn btn-outline magnetic-btn">
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <span>Write to Me</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-value" data-target="1" data-suffix="st">0st</div>
+            <div class="stat-label">Year ECE</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" data-target="8" data-suffix="+">0+</div>
+            <div class="stat-label">Projects &amp; Builds</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value" data-target="100" data-suffix="%">0%</div>
+            <div class="stat-label">Curiosity &amp; Drive</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Visual Portrait Frame -->
+      <div class="hero-visual">
+        <div class="hero-frame tilt-card">
+          <div class="hero-frame-border">
+            <div class="corner corner-tl"></div>
+            <div class="corner corner-tr"></div>
+            <div class="corner corner-bl"></div>
+            <div class="corner corner-br"></div>
+          </div>
+          <div class="hero-avatar">
+            <div class="hero-monogram animate-monogram">RK</div>
+          </div>
+          <div class="float-tag float-tag-1">
+            <span class="icon">⚡</span>Circuits &amp; Code
+          </div>
+          <div class="float-tag float-tag-2">
+            <span class="icon">🔌</span>IoT &amp; Embedded
+          </div>
+          <div class="float-tag float-tag-3">
+            <span class="icon">✦</span>1st Year Explorer
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scroll Indicator -->
+    <a href="#about" class="hero-scroll-prompt" aria-label="Scroll to About">
+      <span class="scroll-mouse">
+        <span class="scroll-wheel"></span>
+      </span>
+      <span class="scroll-text">Scroll to explore</span>
+    </a>
+  </div>
+</section>
+
+<!-- ==================== ABOUT ==================== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Visual -->
+      <div class="about-visual reveal-left">
+        <div class="about-portrait">
+          <div class="portrait-monogram">R</div>
+        </div>
+        <div class="about-badge">
+          <span class="num">1st</span>
+          <span class="label">Year<br>Student</span>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="reveal-right">
+        <div class="section-eyebrow">The Student</div>
+        <h2 class="section-title">About <span class="gold-word">Me</span></h2>
+        <div class="section-rule"></div>
+
+        <div class="pull-quote">
+          "The best part of ECE? You get to understand the world from the electron up — and then build something with it."
+          <cite>— Rithika NK</cite>
+        </div>
+
+        <p class="about-bio">
+          I'm <em>Rithika NK</em>, a first-year Electronics and Communication Engineering student
+          with a passion for how things work — from microcontrollers and electronic circuits to
+          software development and machine learning. I love bridging hardware with code through
+          hands-on builds and creative projects.
+        </p>
+        <p class="about-bio">
+          As a freshman, I immerse myself in core engineering principles, experiment with sensors
+          and microcontrollers, and learn new tools and frameworks every day.
+        </p>
+
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <span class="h-icon">🎓</span>
+            <div>
+              <div class="h-title">B.Tech · ECE (1st Year)</div>
+              <div class="h-sub">Electronics &amp; Communication Engg.</div>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="h-icon">📍</span>
+            <div>
+              <div class="h-title">India</div>
+              <div class="h-sub">Open to internships &amp; collabs</div>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="h-icon">⚡</span>
+            <div>
+              <div class="h-title">Embedded &amp; IoT</div>
+              <div class="h-sub">Arduino · ESP32 · Raspberry Pi</div>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="h-icon">💻</span>
+            <div>
+              <div class="h-title">Software Dev</div>
+              <div class="h-sub">Web · ML · Systems</div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary">
+          Get In Touch
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SKILLS ==================== -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">The Toolkit</div>
+      <h2 class="section-title">My <span class="gold-word">Skills</span></h2>
+      <div class="section-rule"></div>
+      <p class="section-desc">From signal processing to web apps — skills gathered in labs, lectures, and late-night side projects.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-category reveal delay-1">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">⚡</span>
+          <span class="skill-cat-name">Embedded &amp; Hardware</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Arduino</span>
+          <span class="skill-tag">ESP32 / ESP8266</span>
+          <span class="skill-tag">Raspberry Pi</span>
+          <span class="skill-tag">STM32</span>
+          <span class="skill-tag">UART / SPI / I²C</span>
+          <span class="skill-tag">Verilog</span>
+          <span class="skill-tag">FPGA</span>
+          <span class="skill-tag">Proteus / Keil</span>
+        </div>
+      </div>
+      <div class="skill-category reveal delay-2">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">💻</span>
+          <span class="skill-cat-name">Programming</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">C / C++</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">MATLAB</span>
+          <span class="skill-tag">HTML / CSS</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">SQL</span>
+        </div>
+      </div>
+      <div class="skill-category reveal delay-3">
+        <div class="skill-cat-header">
+          <span class="skill-cat-icon">🔬</span>
+          <span class="skill-cat-name">Domains &amp; Concepts</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">IoT Systems</span>
+          <span class="skill-tag">Signal Processing</span>
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">Computer Vision</span>
+          <span class="skill-tag">RTOS</span>
+          <span class="skill-tag">PCB Design</span>
+          <span class="skill-tag">Data Structures</span>
+          <span class="skill-tag">Linux / Git</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proficiency Bars -->
+    <div class="skill-category reveal" style="max-width:700px;margin:0 auto;">
+      <div class="skill-cat-header">
+        <span class="skill-cat-icon">📊</span>
+        <span class="skill-cat-name">Proficiency Overview</span>
+      </div>
+      <div class="skill-bars">
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">Embedded Systems (Arduino / ESP32)</span>
+            <span class="skill-bar-pct">85%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">C / C++</span>
+            <span class="skill-bar-pct">80%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">Python &amp; ML Libraries</span>
+            <span class="skill-bar-pct">75%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">Web Development (React / Node.js)</span>
+            <span class="skill-bar-pct">70%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70%"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">Signal Processing &amp; MATLAB</span>
+            <span class="skill-bar-pct">65%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65%"></div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ==================== PROJECTS ==================== -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">The Workshop</div>
+      <h2 class="section-title">My <span class="gold-word">Projects</span></h2>
+      <div class="section-rule"></div>
+      <p class="section-desc">Things I've built, tinkered with, and learned from — spanning hardware, software, and everything in between.</p>
+    </div>
+
+    <div class="projects-filter reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="embedded">Embedded / IoT</button>
+      <button class="filter-btn" data-filter="software">Software / Web</button>
+      <button class="filter-btn" data-filter="ml">ML / AI</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card reveal delay-1" data-category="embedded">
+        <div class="project-thumbnail">
+          <div class="project-thumbnail-bg" style="background:linear-gradient(135deg,#0f0c06,#1a1408,#221a0a);">
+            <svg viewBox="0 0 130 90" width="130" xmlns="http://www.w3.org/2000/svg">
+              <!-- MCU chip -->
+              <rect x="45" y="28" width="40" height="34" rx="2" fill="rgba(200,168,75,0.12)" stroke="rgba(200,168,75,0.45)" stroke-width="1.2"/>
+              <text x="65" y="48" text-anchor="middle" font-family="monospace" font-size="7" fill="rgba(200,168,75,0.7)">ESP32</text>
+              <!-- Pins left -->
+              <line x1="30" y1="34" x2="45" y2="34" stroke="rgba(200,168,75,0.4)" stroke-width="1"/>
+              <line x1="30" y1="42" x2="45" y2="42" stroke="rgba(200,168,75,0.4)" stroke-width="1"/>
+              <line x1="30" y1="50" x2="45" y2="50" stroke="rgba(200,168,75,0.4)" stroke-width="1"/>
+              <!-- Pins right -->
+              <line x1="85" y1="34" x2="100" y2="34" stroke="rgba(200,168,75,0.4)" stroke-width="1"/>
+              <line x1="85" y1="42" x2="100" y2="42" stroke="rgba(200,168,75,0.4)" stroke-width="1"/>
+              <line x1="85" y1="50" x2="100" y2="50" stroke="rgba(200,168,75,0.4)" stroke-width="1"/>
+              <!-- WiFi symbol -->
+              <path d="M58 18 Q65 12 72 18" fill="none" stroke="rgba(56,189,248,0.5)" stroke-width="1.2"/>
+              <path d="M61 21 Q65 17 69 21" fill="none" stroke="rgba(56,189,248,0.5)" stroke-width="1"/>
+              <circle cx="65" cy="23" r="1.5" fill="rgba(56,189,248,0.7)"/>
+              <!-- Sensor box -->
+              <rect x="100" y="38" width="18" height="14" rx="1" fill="rgba(122,30,46,0.3)" stroke="rgba(122,30,46,0.5)" stroke-width="0.8"/>
+              <text x="109" y="47" text-anchor="middle" font-family="monospace" font-size="5" fill="rgba(200,168,75,0.5)">DHT</text>
+            </svg>
+          </div>
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn">GitHub</a>
+            <a href="#" class="overlay-btn">Demo</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">ESP32</span>
+            <span class="project-tag">C++</span>
+            <span class="project-tag">MQTT</span>
+            <span class="project-tag">IoT</span>
+          </div>
+          <h3 class="project-title">Smart Home Monitor</h3>
+          <p class="project-desc">An ESP32-based IoT system that reads temperature, humidity, and air quality sensors, publishes data over MQTT, and visualises it on a real-time web dashboard.</p>
+          <div class="project-footer">
+            <div class="project-links">
+              <a href="#" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Code
+              </a>
+            </div>
+            <div class="project-star">⚡ IoT</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card reveal delay-2" data-category="ml">
+        <div class="project-thumbnail">
+          <div class="project-thumbnail-bg" style="background:linear-gradient(135deg,#0a0c10,#10141c,#0a0e16);">
+            <svg viewBox="0 0 130 90" width="130" xmlns="http://www.w3.org/2000/svg">
+              <!-- Camera frame -->
+              <rect x="20" y="18" width="60" height="50" rx="2" fill="rgba(200,168,75,0.07)" stroke="rgba(200,168,75,0.3)" stroke-width="1"/>
+              <!-- Face outline -->
+              <ellipse cx="50" cy="40" rx="14" ry="18" fill="none" stroke="rgba(56,189,248,0.45)" stroke-width="1" stroke-dasharray="3 2"/>
+              <!-- Detection box -->
+              <rect x="34" y="20" width="32" height="38" fill="none" stroke="rgba(200,168,75,0.5)" stroke-width="1" stroke-dasharray="3 2"/>
+              <!-- Corner marks -->
+              <path d="M34 23 v-3 h3" fill="none" stroke="rgba(200,168,75,0.8)" stroke-width="1.5"/>
+              <path d="M63 23 v-3 h-3" fill="none" stroke="rgba(200,168,75,0.8)" stroke-width="1.5"/>
+              <path d="M34 55 v3 h3" fill="none" stroke="rgba(200,168,75,0.8)" stroke-width="1.5"/>
+              <path d="M63 55 v3 h-3" fill="none" stroke="rgba(200,168,75,0.8)" stroke-width="1.5"/>
+              <!-- Output label -->
+              <rect x="88" y="28" width="28" height="10" rx="1" fill="rgba(58,82,64,0.3)" stroke="rgba(58,82,64,0.5)" stroke-width="0.8"/>
+              <text x="102" y="36" text-anchor="middle" font-family="monospace" font-size="5" fill="rgba(200,168,75,0.6)">99.2%</text>
+              <rect x="88" y="44" width="28" height="10" rx="1" fill="rgba(122,30,46,0.3)" stroke="rgba(122,30,46,0.4)" stroke-width="0.8"/>
+              <text x="102" y="52" text-anchor="middle" font-family="monospace" font-size="5" fill="rgba(200,168,75,0.5)">LIVE</text>
+            </svg>
+          </div>
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn">GitHub</a>
+            <a href="#" class="overlay-btn">Report</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">OpenCV</span>
+            <span class="project-tag">TensorFlow</span>
+            <span class="project-tag">Raspberry Pi</span>
+          </div>
+          <h3 class="project-title">Face Mask Detection System</h3>
+          <p class="project-desc">A real-time face mask detection model trained on a custom dataset using TensorFlow, deployed on Raspberry Pi with a camera module for live inference.</p>
+          <div class="project-footer">
+            <div class="project-links">
+              <a href="#" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Code
+              </a>
+            </div>
+            <div class="project-star">🤖 ML</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card reveal delay-3" data-category="software">
+        <div class="project-thumbnail">
+          <div class="project-thumbnail-bg" style="background:linear-gradient(135deg,#0a100c,#10180e,#0a1208);">
+            <svg viewBox="0 0 130 90" width="130" xmlns="http://www.w3.org/2000/svg">
+              <!-- Browser mockup -->
+              <rect x="15" y="14" width="100" height="62" rx="3" fill="rgba(58,82,64,0.1)" stroke="rgba(58,82,64,0.4)" stroke-width="1"/>
+              <rect x="15" y="14" width="100" height="14" rx="3" fill="rgba(58,82,64,0.2)"/>
+              <circle cx="26" cy="21" r="2.5" fill="rgba(122,30,46,0.6)"/>
+              <circle cx="34" cy="21" r="2.5" fill="rgba(200,168,75,0.4)"/>
+              <circle cx="42" cy="21" r="2.5" fill="rgba(58,82,64,0.6)"/>
+              <!-- Content -->
+              <rect x="22" y="35" width="40" height="5" rx="1" fill="rgba(200,168,75,0.5)"/>
+              <rect x="22" y="44" width="86" height="3" rx="1" fill="rgba(255,255,255,0.1)"/>
+              <rect x="22" y="51" width="70" height="3" rx="1" fill="rgba(255,255,255,0.08)"/>
+              <rect x="22" y="58" width="80" height="3" rx="1" fill="rgba(255,255,255,0.08)"/>
+              <rect x="22" y="65" width="50" height="3" rx="1" fill="rgba(255,255,255,0.06)"/>
+            </svg>
+          </div>
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn">Live Demo</a>
+            <a href="#" class="overlay-btn">GitHub</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Node.js</span>
+            <span class="project-tag">MongoDB</span>
+          </div>
+          <h3 class="project-title">Lab Resource Booking App</h3>
+          <p class="project-desc">A full-stack web app for managing and booking ECE lab equipment — oscilloscopes, function generators, and test benches — with a live availability dashboard.</p>
+          <div class="project-footer">
+            <div class="project-links">
+              <a href="#" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Demo
+              </a>
+              <a href="#" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Code
+              </a>
+            </div>
+            <div class="project-star">💻 Web</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card reveal delay-4" data-category="embedded">
+        <div class="project-thumbnail">
+          <div class="project-thumbnail-bg" style="background:linear-gradient(135deg,#0e0a06,#1a1208,#120e06);">
+            <svg viewBox="0 0 130 90" width="130" xmlns="http://www.w3.org/2000/svg">
+              <!-- Robot body -->
+              <rect x="44" y="32" width="42" height="32" rx="3" fill="rgba(200,168,75,0.1)" stroke="rgba(200,168,75,0.4)" stroke-width="1"/>
+              <!-- Eyes -->
+              <circle cx="56" cy="44" r="5" fill="rgba(56,189,248,0.2)" stroke="rgba(56,189,248,0.5)" stroke-width="1"/>
+              <circle cx="74" cy="44" r="5" fill="rgba(56,189,248,0.2)" stroke="rgba(56,189,248,0.5)" stroke-width="1"/>
+              <circle cx="56" cy="44" r="2" fill="rgba(56,189,248,0.8)"/>
+              <circle cx="74" cy="44" r="2" fill="rgba(56,189,248,0.8)"/>
+              <!-- Mouth -->
+              <path d="M56 56 Q65 62 74 56" fill="none" stroke="rgba(200,168,75,0.5)" stroke-width="1.2"/>
+              <!-- Head -->
+              <rect x="50" y="20" width="30" height="14" rx="2" fill="rgba(200,168,75,0.08)" stroke="rgba(200,168,75,0.3)" stroke-width="0.8"/>
+              <!-- Antenna -->
+              <line x1="65" y1="20" x2="65" y2="12" stroke="rgba(200,168,75,0.5)" stroke-width="1"/>
+              <circle cx="65" cy="11" r="2" fill="rgba(122,30,46,0.7)"/>
+              <!-- Arms -->
+              <line x1="44" y1="42" x2="30" y2="50" stroke="rgba(200,168,75,0.3)" stroke-width="1.5"/>
+              <line x1="86" y1="42" x2="100" y2="50" stroke="rgba(200,168,75,0.3)" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn">GitHub</a>
+            <a href="#" class="overlay-btn">Video</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Arduino</span>
+            <span class="project-tag">C++</span>
+            <span class="project-tag">Servo Motors</span>
+            <span class="project-tag">Ultrasonic</span>
+          </div>
+          <h3 class="project-title">Obstacle-Avoiding Robot</h3>
+          <p class="project-desc">A self-navigating robot built with Arduino Uno, HC-SR04 ultrasonic sensors, and servo-controlled chassis. Detects and avoids obstacles in real time using PID-like logic.</p>
+          <div class="project-footer">
+            <div class="project-links">
+              <a href="#" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Code
+              </a>
+            </div>
+            <div class="project-star">⚡ Embedded</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card reveal delay-5" data-category="ml">
+        <div class="project-thumbnail">
+          <div class="project-thumbnail-bg" style="background:linear-gradient(135deg,#0a0608,#160a0e,#0e0608);">
+            <svg viewBox="0 0 130 90" width="130" xmlns="http://www.w3.org/2000/svg">
+              <!-- Signal wave -->
+              <path d="M10 45 Q20 20 30 45 Q40 70 50 45 Q60 20 70 45 Q80 70 90 45 Q100 20 110 45 Q120 70 130 45" fill="none" stroke="rgba(200,168,75,0.5)" stroke-width="1.5"/>
+              <!-- FFT bars -->
+              <rect x="18" y="55" width="6" height="20" rx="1" fill="rgba(122,30,46,0.5)"/>
+              <rect x="28" y="42" width="6" height="33" rx="1" fill="rgba(200,168,75,0.4)"/>
+              <rect x="38" y="48" width="6" height="27" rx="1" fill="rgba(122,30,46,0.4)"/>
+              <rect x="48" y="35" width="6" height="40" rx="1" fill="rgba(200,168,75,0.55)"/>
+              <rect x="58" y="52" width="6" height="23" rx="1" fill="rgba(58,82,64,0.5)"/>
+              <rect x="68" y="44" width="6" height="31" rx="1" fill="rgba(200,168,75,0.4)"/>
+              <rect x="78" y="58" width="6" height="17" rx="1" fill="rgba(122,30,46,0.4)"/>
+              <rect x="88" y="40" width="6" height="35" rx="1" fill="rgba(200,168,75,0.5)"/>
+              <rect x="98" y="50" width="6" height="25" rx="1" fill="rgba(58,82,64,0.4)"/>
+            </svg>
+          </div>
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn">Report</a>
+            <a href="#" class="overlay-btn">GitHub</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">MATLAB</span>
+            <span class="project-tag">NumPy</span>
+            <span class="project-tag">DSP</span>
+          </div>
+          <h3 class="project-title">Audio Signal Classifier</h3>
+          <p class="project-desc">Processes raw audio signals using FFT and MFCC feature extraction, then classifies them (speech vs. noise vs. music) using a lightweight CNN trained in Python.</p>
+          <div class="project-footer">
+            <div class="project-links">
+              <a href="#" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Code
+              </a>
+            </div>
+            <div class="project-star">🔬 DSP + ML</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card reveal delay-1" data-category="software">
+        <div class="project-thumbnail">
+          <div class="project-thumbnail-bg" style="background:linear-gradient(135deg,#080a0c,#0c1014,#080a0e);">
+            <svg viewBox="0 0 130 90" width="130" xmlns="http://www.w3.org/2000/svg">
+              <!-- Phone outline -->
+              <rect x="46" y="8" width="38" height="68" rx="5" fill="rgba(200,168,75,0.06)" stroke="rgba(200,168,75,0.35)" stroke-width="1.2"/>
+              <rect x="51" y="16" width="28" height="48" rx="2" fill="rgba(200,168,75,0.05)"/>
+              <circle cx="65" cy="70" r="3" fill="none" stroke="rgba(200,168,75,0.3)" stroke-width="1"/>
+              <!-- App content -->
+              <rect x="54" y="20" width="22" height="5" rx="1" fill="rgba(200,168,75,0.4)"/>
+              <rect x="54" y="29" width="22" height="10" rx="1" fill="rgba(58,82,64,0.3)" stroke="rgba(58,82,64,0.4)" stroke-width="0.5"/>
+              <text x="65" y="36" text-anchor="middle" font-family="monospace" font-size="5" fill="rgba(200,168,75,0.5)">23°C</text>
+              <rect x="54" y="43" width="10" height="10" rx="1" fill="rgba(122,30,46,0.3)"/>
+              <rect x="66" y="43" width="10" height="10" rx="1" fill="rgba(200,168,75,0.15)"/>
+              <rect x="54" y="57" width="22" height="4" rx="1" fill="rgba(255,255,255,0.07)"/>
+            </svg>
+          </div>
+          <div class="project-overlay">
+            <a href="#" class="overlay-btn">APK</a>
+            <a href="#" class="overlay-btn">GitHub</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">Dart</span>
+            <span class="project-tag">Firebase</span>
+            <span class="project-tag">IoT</span>
+          </div>
+          <h3 class="project-title">IoT Dashboard Mobile App</h3>
+          <p class="project-desc">A Flutter mobile app that connects to ESP32 sensor nodes over Firebase Realtime DB, displaying live temperature, humidity, and device status with push alerts.</p>
+          <div class="project-footer">
+            <div class="project-links">
+              <a href="#" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Code
+              </a>
+            </div>
+            <div class="project-star">📱 Mobile</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== EXPERIENCE ==================== -->
+<section id="experience">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">The Journey</div>
+      <h2 class="section-title">Work <span class="gold-word">Experience</span></h2>
+      <div class="section-rule"></div>
+      <p class="section-desc">Internships, academic projects, and community work that have shaped me as an engineer.</p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <span class="timeline-role">Freshman Explorer &amp; Tech Enthusiast</span>
+            <span class="timeline-date">2025 – Present</span>
+          </div>
+          <div class="timeline-company">B.Tech in ECE · 1st Year</div>
+          <p class="timeline-desc">
+            Building strong foundations in circuit theory, digital logic, and programming. Actively working on personal projects combining microcontrollers, sensors, and web development.
+          </p>
+          <div class="timeline-skills">
+            <span class="skill-tag">ECE Fundamentals</span>
+            <span class="skill-tag">C / C++</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Problem Solving</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal delay-1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <span class="timeline-role">Hands-on IoT &amp; Embedded Tinkering</span>
+            <span class="timeline-date">2025</span>
+          </div>
+          <div class="timeline-company">Self-Directed Learning &amp; Maker Labs</div>
+          <p class="timeline-desc">
+            Interfacing sensors and actuators with Arduino Uno and ESP32 boards. Implementing real-time telemetry over Wi-Fi and MQTT protocols to build connected devices.
+          </p>
+          <div class="timeline-skills">
+            <span class="skill-tag">ESP32</span>
+            <span class="skill-tag">Arduino</span>
+            <span class="skill-tag">Sensors</span>
+            <span class="skill-tag">MQTT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal delay-2">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <span class="timeline-role">Active Member — College Tech Clubs</span>
+            <span class="timeline-date">2025 – Present</span>
+          </div>
+          <div class="timeline-company">ECE Student Community &amp; Maker Space</div>
+          <p class="timeline-desc">
+            Participating in technical workshops, hackathons, and hardware demo sessions. Collaborating with fellow peers and seniors on tech exploration.
+          </p>
+          <div class="timeline-skills">
+            <span class="skill-tag">Teamwork</span>
+            <span class="skill-tag">Hackathons</span>
+            <span class="skill-tag">Workshops</span>
+            <span class="skill-tag">Community</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left -->
+      <div class="reveal-left">
+        <div class="section-eyebrow">Say Hello</div>
+        <h2 class="section-title">Let's <span class="gold-word">Connect</span></h2>
+        <div class="section-rule"></div>
+        <p class="section-desc" style="max-width:360px;">
+          Open to internships, project collaborations, hackathon teammates, or just a good conversation about tech. Reach out!
+        </p>
+
+        <div class="contact-info-cards">
+          <a href="mailto:rithikank07@gmail.com" class="contact-card">
+            <span class="c-icon">📬</span>
+            <div>
+              <div class="c-label">Write to me at</div>
+              <div class="c-value">rithikank07@gmail.com</div>
+            </div>
+          </a>
+          <a href="#" class="contact-card">
+            <span class="c-icon">💼</span>
+            <div>
+              <div class="c-label">Connect on</div>
+              <div class="c-value">LinkedIn — /in/rithikanK</div>
+            </div>
+          </a>
+          <a href="#" class="contact-card">
+            <span class="c-icon">🐙</span>
+            <div>
+              <div class="c-label">Read my code</div>
+              <div class="c-value">GitHub — @rithikanK</div>
+            </div>
+          </a>
+          <a href="#" class="contact-card">
+            <span class="c-icon">🐦</span>
+            <div>
+              <div class="c-label">Find me on X</div>
+              <div class="c-value">@rithika_nk</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="reveal-right">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-name">Your Name</label>
+              <input id="f-name" type="text" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="f-email">Email Address</label>
+              <input id="f-email" type="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="f-subject">Nature of Inquiry</label>
+            <select id="f-subject">
+              <option value="" disabled selected>Select a chapter…</option>
+              <option>Freelance Commission</option>
+              <option>Full-time Opportunity</option>
+              <option>Open Source Collaboration</option>
+              <option>Internship / Opportunity</option>
+            <option>Hackathon / Collaboration</option>
+            <option>Just Saying Hi!</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-message">Your Message</label>
+            <textarea id="f-message" placeholder="Tell me about your project, opportunity, or idea…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            Send Message
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-logo">ℜ𝔎</div>
+    <p class="footer-copy">© 2026 Rithika NK · ECE Student · Built with curiosity &amp; code</p>
+    <div class="footer-socials">
+      <a href="#" class="social-link" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+      </a>
+      <a href="#" class="social-link" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="#" class="social-link" aria-label="Twitter / X">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <a href="#" class="social-link" aria-label="Dribbble">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="toast" id="toast">
+  <span>✦</span>
+  <span>Message sent! I'll get back to you soon.</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
